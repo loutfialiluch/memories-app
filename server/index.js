@@ -2,14 +2,13 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import postRoutes from './routes/posts.js';
+import dotenv from 'dotenv';
 
 const app = express();
+dotenv.config();
 app.use(express.json({ limit: "30mb" }));
 // Cross Origin Resource Sharing
 app.use(cors());
-
-const MONGO_URI =
-  "mongodb+srv://loutfox:fox0610108175@cluster0.hif0r.mongodb.net/memories?retryWrites=true&w=majority";
 
 // Exposed PORT
 const PORT = process.env.PORT || 5000;
@@ -19,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 app.use('/posts', postRoutes);
 
 mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("Connected successfully to MongoDB");
     app.listen(PORT, () => {
