@@ -21,7 +21,7 @@ cd client
 npm install
 cd server
 npm install
-touch .env (take a look at .env.example for the structure)
+touch .env (take a look at .env.example file for the structure)
 
 # inside /client folder: (separate CLI tab)
 npm start
