@@ -1,5 +1,5 @@
 # MERN Stack + Redux Application
-Memories, is an application used to highlight and manage your best memories. Built using the MERN STACK + Redux.
+memories-app is an application used to highlight and manage your best memories. Built using the MERN STACK + Redux.
 ## Notes
 
 - **M** = MongoDB (We'll use Mongoose to make it easier for Node.js to work with MongoDB, and we'll use MongoDB Atlas = MongoDB database, but cloud).
