@@ -1,4 +1,4 @@
-# Learning MERN Stack
+# MERN Stack + Redux Application
 Memories, is an application used to highlight and manage your best memories. Built using the MERN STACK + Redux.
 ## Notes
 
