@@ -14,7 +14,7 @@ Memories App:
 - Delete a memory
 - Like a memory
 
-To just get it running after you `git clone`, set up [MongoDB Atlas](https://github.com/hchiam/learning-mern-stack#mongodb-atlas), and then follow these CLI steps:
+To just get it running after you `git clone`, set up [MongoDB Atlas](https://www.mongodb.com/), and then follow these CLI steps:
 
 ```bash
 cd client
